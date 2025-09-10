@@ -1,0 +1,24 @@
+<% layout("../layouts/boilerplate") %>
+<body>
+    <div class="col-md-6 card p-4 shadow-grey-all forms"  >
+     <form method="POST" action = "/listings/<%= listing._id %>?_method=PUT" enctype="multipart/form-data">
+        <label htmlfor = "title" class="form-label">Title : </label>
+        <input placeholder= "" id = "title" name ="listing[title]"value = "<%=listing.title%>" class="form-control">
+         <label htmlfor = "description" class="form-label">Description : </label>
+        <input placeholder="" id = "description" name = "listing[description]" value = "<%=listing.description%>" class="form-control">
+         <div>
+             <img id="image" style="width: 200px; height: 200px;" src="<%= originalImage %>" />
+         </div>
+        <label htmlfor = "image" name = "image" class="form-label">Imageurl : </label>
+        <input placeholder="enter image" id = "image" name = "listing[image]" type = "file" class="form-control"> 
+         <label htmlfor = "price" name = "price" class="form-label">Price : </label>
+        <input placeholder="<%=listing.price%>" id = "price" name = "listing[price]" value = "<%=listing.price%>" class="form-control">
+         <label htmlfor = "location" name = "location" class="form-label">Location : </label>
+        <input placeholder="" id = "location" name = "listing[location]" value = "<%=listing.location%>" class="form-control">
+         <label htmlfor = "country" name = "country" class="form-label">Country : </label>
+        <input placeholder="" id = "country" name = "listing[country]" value = "<%=listing.country%>" class="form-control">
+        <button type = "submit" class = "btn btn-dark btn-col">Edit</button> 
+    </form>
+    </div>
+</body>
+</html>

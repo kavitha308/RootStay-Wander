@@ -1,0 +1,192 @@
+/* body{
+    background-color: burlywood;
+} */
+ .navbar{
+    height : 5rem;
+    color : #8f9292 !important
+ }
+ .all{
+    margin-top:50px !important;
+ }
+ /* .nav-link:hover{
+   
+ } */
+  .nav-link:hover {
+  box-shadow: 0 4px 5px grey; /* horizontal, vertical, blur, color */
+  transition: box-shadow 0.3s ease; /* smooth effect */
+   background-color: white;
+   /* font-size: 10px !important; */
+}
+nav.navs{
+   background-color:rgb(247, 249, 249) !important;
+   border-bottom-left-radius: 5px !important;
+   border-bottom-right-radius: 5px !important;
+   font-size: 20px !important;
+}
+
+ body{
+   /* margin-top:50px !important; */
+   margin-left: 30px !important;
+   margin-right: 30px !important;
+ }
+ .fa-compass{
+    color :red !important;
+    font-size: 2rem;
+     margin-right: 30px;
+ }
+ 
+ .nav-link{
+    color:black !important;
+    margin-right: 30px;
+ }
+ /* footer styling */
+ .f-info-links a{
+    text-decoration: none;
+    color: black;
+ }
+  .f-info-links a:hover{
+    text-decoration: underline;
+  }
+  .f-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color: black;
+    background-color: darkgray;
+  }
+  .f-info-social-icons
+{
+    width: 100%;
+    margin-right: 1.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+ .f-info-links {
+    width: 100%;
+    margin-bottom: 1rem;
+    
+ }
+ .dec{
+    width :100%;
+    margin-bottom: 1rem;
+ }
+ /* card */
+.card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem;
+    width:100% !important;
+    object-fit:cover;
+}
+.image-info{
+   text-decoration: none !important;
+   color: black;
+}
+/* .image-info:hover{ */
+   /* opacity: 0.1; */
+   /* background-color: white; */
+   /* opacity: 0.1; */
+/* } */
+.card-img-overlay{
+    opacity: 0; 
+}
+.card-img-overlay:hover{
+    opacity: 0.2; 
+    background-color: white;
+}
+.col-md-6 card p-4 shadow{
+   background-color: dimgrey !important;
+   border:2px solid black !important;
+}
+.shadow-grey-all {
+  box-shadow: 0 0 35px rgba(41, 39, 39, 0.4); /* X offset, Y offset, blur radius, color */
+   align-self: center !important;
+}
+/* submit button in create form to red */
+.btn-col{
+background-color: red !important;
+border: none !important;
+width :100% !important;
+}
+.forms{
+   display: flex !important;
+   align-self: center !important;
+   margin-left: 300px;
+   margin-top: 20px !important;
+}
+.heading-create-page{
+margin-left:300px;
+margin-top: 20px;
+/* margin-bottom: 20px !important; */
+}
+/* show page */
+.show-img{
+   height:40vh !important;
+   width:50vh !important;
+}
+.show-btns{
+   background-color: red !important;
+   border: none !important;
+
+}
+.m-top{
+    margin-top:20px;
+}
+.img-show{
+   width: 600px !important;
+}
+.navbar-brand{
+   color: red !important;
+}
+/* footer {
+  position: fixed !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+   padding-bottom: 1px;
+} */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.f-info-socials i{
+    margin-right: 1rem ;
+    font-size: 1.2rem;
+}
+
+
+.f-info-links:hover{
+    text-decoration: underline;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.content {
+  flex: 1; /* This pushes the footer down */
+}
+
+.alerts{
+   margin-top: 20px !important;
+}
+/* review card styling */
+ .review{
+   border:2px solid grey !important;
+} 

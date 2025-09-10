@@ -1,0 +1,65 @@
+<% layout("../layouts/boilerplate") %>
+<body>
+    <h3 class="heading-create-page">Add a new Listing</h3>
+    <form method = "POST" action  = "/listings" class = "container mt-5 needs-validation" novalidate enctype = "multipart/form-data" >
+        <!-- <div class = "col-md-6 card p-4 shadow"> -->
+     <div class="col-md-6 card p-4 shadow-grey-all forms"  >
+        <div class = "mb-3">
+        <label htmlfor = "title" name = "title" class="form-label">Title : </label>
+        <input placeholder="Enter title" id = "title" name ="listing[title]" class="form-control" required>
+        <div class = "valid-feedback">Title looks good</div>
+         <div class = "invalid-feedback">Please enter valid Title</div>
+        </div>
+        <div class = "mb-3">
+         <label htmlfor = "description" name = "description" class="form-label">Description : </label>
+       <textarea placeholder="Enter description" id="description" name="listing[description]" class="form-control" required></textarea>
+        <div class = "valid-feedback">Description is valid</div>
+         <div class = "invalid-feedback">Please enter short Description</div>
+        </div>
+        <!-- <div class="mb-3 col-md-4 type">
+        <label for="type" class="form-label">Type</label>
+        <select class="form-select" name="listing[type]">
+          <option selected value="trending">Trending</option>
+          <option value="rooms">Rooms</option>
+          <option value="mountains">Mountains</option>
+          <option value="castles">Castles</option>
+          <option value="cities">Iconic Cities</option>
+          <option value="pools">Pools</option>
+          <option value="camping">Camping</option>
+          <option value="farms">Farms</option>
+          <option value="arctic">Arctic</option>
+          <option value="domes">Domes</option>
+          <option value="boats">Boats</option>
+        </select>
+      </div> -->
+        <div class = "mb-3">
+        <label htmlfor = "image" name = "image" class="form-label">Upload Image : </label>
+        <input placeholder="Enter imageURL" id = "image" name = "listing[image]" type="file" class="form-control">
+        <div class = "row">
+            <div class = "mb-3 col-4">
+         <label htmlfor = "price" name = "price" class="form-label">Price : </label>
+        <input placeholder="Enter price" id = "price" name = "listing[price]" class="form-control" required>
+        <div class = "invalid-feedback">Enter a number</div>
+        <div class = "valid-feedback">Price is valid</div>
+    </div>
+         <div class = "mb-3 col-8">
+         <label htmlfor = "country" name = "country" class="form-label">Country : </label>
+        <input placeholder="Enter country" id = "country" name = "listing[country]" class="form-control"required>
+        <div class = "valid-feedback">Country name is valid </div>
+         <div class = "invalid-feedback">Country name is valid</div>
+        </div>
+        </div>
+        <div class = "mb-3">
+         <label htmlfor = "location" name = "location" class="form-label">Location : </label>
+        <input placeholder="Enter location" id = "location" name = "listing[location]" class="form-control" required>
+        <div class = "valid-feedback">Location looks good</div>
+         <div class = "invalid-feedback">Location is valid</div>
+        </div>
+        <br>
+        <br> 
+        <button class = "btn btn-dark btn-col" >Submit</button>
+        </div>
+    </form>
+    <br>
+</body>
+</html>
